@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobrepor Imagem</title>
+    <style>
+       body {
+    margin: 0;
+    padding: 0;
+    /* Defina a imagem de fundo e ajuste seu tamanho */
+    background-image: url('imagens/espaco.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Ocupar toda a tela */
+    height: 100vh;
+    /* Centralizar o conteúdo verticalmente */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+}
+
+.overlay-image {
+    position: absolute;
+    /* Ajuste as propriedades para centralizar a segunda imagem */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Outras possíveis propriedades para ajustar a sobreposição */
+    /* width: 200px; */
+    /* height: 200px; */
+    /* z-index: 1; (caso queira ajustar a ordem de sobreposição) */
+}
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <img src="imagens/espaco.jpg" alt="Imagem 1">
+        <img src="imagens/astronauta.png" alt="" class="overlay-image">
+    </div>
+</body>
+</html>
