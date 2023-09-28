@@ -7,13 +7,105 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,td {
             border: 1px solid black;
+            padding: 8px;
+        }
+
+        .gray {
+            background-color: gray;
+            color: white;
+        }
+
+        .med {
+            text-align: left;
+        }
+
+        .num {
+            text-align: center;
+        }
+
+        .des {
+            font-weight: bolder;
         }
     </style>
 </head>
 <body>
     <table>
-        
+        <thead>
+            <tr class="gray">
+                <th rowspan="2" scope="col">Area</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="col">Notas</th>
+                <th rowspan="2" scope="col">Media</th>
+            </tr>
+            <tr>
+                <th class="gray" scope="col">Nota 1</th>
+                <th class="gray" scope="col">Nota 2</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matematica</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+
+           <tr>
+                <td>Fisica</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+           </tr>
+
+           <tr>
+                <td>Quimica</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+           </tr>
+
+           <tr>
+            <td>Biologia</td>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+           </tr>
+
+           <tr class="gray">
+            <th colspan="4" class="med" scope="col">Media das Exatas</th>
+            <td class="num des">0.0</td>
+           </tr>
+
+           <tr>
+            <th rowspan="2" scope="rowgroup">Humanas</th>
+            <td>Historia</td>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+           </tr>
+
+           <tr>
+            <td>Geografia</td>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+            <td class="num">0.0</td>
+           </tr>
+
+           <tr class="gray">
+            <th colspan="4" class="med" scope="col">Media das humanas</th>
+            <td class="num des">0.0</td>
+           </tr>
+        </tbody>
     </table>
 </body>
 </html>
